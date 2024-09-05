@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import arrow icons
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 
 
 const GalleryWidget = () => {
   const [images, setImages] = useState([
@@ -8,12 +8,12 @@ const GalleryWidget = () => {
     'https://m.media-amazon.com/images/I/41vTPfO9yrL._SY300_SX300_QL70_FMwebp_.jpg',
   ]);
 
-  // Function to add images from device
+ 
   const addImage = (e) => {
-    const file = e.target.files[0]; // Get the first selected file
+    const file = e.target.files[0]; 
     if (file) {
-      const newImage = URL.createObjectURL(file); // Create a temporary URL for the image
-      setImages([...images, newImage]); // Add new image to the gallery
+      const newImage = URL.createObjectURL(file); 
+      setImages([...images, newImage]); 
     }
   };
 
@@ -31,23 +31,23 @@ const GalleryWidget = () => {
               type="file"
               accept="image/*"
               onChange={addImage}
-              className="hidden" // Hide the default file input
+              className="hidden" 
             />
           </label>
 
-          {/* Left arrow button */}
+         
           <button className="bg-gray-600 text-white rounded-full p-2">
             <FaArrowLeft className="text-xl" />
           </button>
 
-          {/* Right arrow button */}
+        
           <button className="bg-gray-600 text-white rounded-full p-2">
             <FaArrowRight className="text-xl" />
           </button>
         </div>
       </div>
 
-      {/* Gallery grid */}
+      
       <div className="mt-4 flex-wrap grid grid-cols-3 gap-2">
         {images.map((image, index) => (
           <img

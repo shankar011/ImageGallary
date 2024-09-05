@@ -5,7 +5,7 @@ const TabWidget = () => {
 
   return (
     <div className="bg-gray-700  shadow-lg rounded-lg p-6">
-      {/* Tab Headers */}
+    
       <div className="flex space-x-6 text-white font-bold border-b-2 border-gray-200 pb-3">
         {['About Me', 'Experiences', 'Recommended'].map((tab) => (
           <button
@@ -16,7 +16,7 @@ const TabWidget = () => {
             }`}
           >
             {tab}
-            {/* Tab Underline Indicator */}
+           
             {activeTab === tab && (
               <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-600 rounded-full transition-all duration-300"></span>
             )}
@@ -24,7 +24,7 @@ const TabWidget = () => {
         ))}
       </div>
 
-      {/* Tab Content */}
+     
       <div className="mt-6  text-white">
         {activeTab === 'About Me' && (
           <p className="animate-fadeIn">
