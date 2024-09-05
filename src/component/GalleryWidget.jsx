@@ -18,7 +18,7 @@ const GalleryWidget = () => {
   };
 
   return (
-    <div className="bg-gray-700 shadow-lg rounded-lg p-6">
+    <div className="bg-customGray shadow-lg rounded-lg p-6">
      
       <div className="flex flex-wrap justify-between items-center">
         <h3 className="text-xl bg-gray-600 text-white font-bold p-2 px-4 rounded">Gallery</h3>

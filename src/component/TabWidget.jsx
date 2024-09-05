@@ -4,7 +4,7 @@ const TabWidget = () => {
   const [activeTab, setActiveTab] = useState('About Me');
 
   return (
-    <div className="bg-gray-700  shadow-lg rounded-lg p-6">
+    <div className="bg-customGray  shadow-lg rounded-lg p-6">
     
       <div className="flex space-x-6 text-white font-bold border-b-2 border-gray-200 pb-3">
         {['About Me', 'Experiences', 'Recommended'].map((tab) => (
